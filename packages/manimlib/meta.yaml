@@ -1,0 +1,12 @@
+package:
+  name: manimlib
+  version: 0.0.1
+source:
+  path: /manim
+requirements:
+  run:
+    - numpy
+    - colour
+test:
+  imports:
+  - manimlib

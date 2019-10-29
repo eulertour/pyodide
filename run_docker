@@ -8,6 +8,7 @@ exec docker run \
     -p $PYODIDE_SYSTEM_PORT:$PYODIDE_DOCKER_PORT \
     -it --rm \
     -v $PWD:/src \
+    -v $PWD/../manim:/manim \
     --user root -e NB_UID=$UID -e NB_GID=$GID \
     ${PYODIDE_DOCKER_IMAGE} \
     /bin/bash
