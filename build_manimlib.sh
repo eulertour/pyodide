@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# This script will rebuild manim to be used with pyodide.
+# This script will rebuild manim to be used with pyodide. It should be called
+# from inside the pyodide docker image (i.e. after running ./run_docker).
 
 # update the build
 rm -rf packages/manimlib/build/
